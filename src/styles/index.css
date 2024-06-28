@@ -10,3 +10,92 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.baseLista{
+    margin-top: 40px;
+    background-color: rgb(238, 238, 238);
+    width: 500px;
+    box-shadow: 5px 8px 12px rgb(170, 170, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.lista{
+    width: 100%;
+}
+
+
+input{
+    padding: 10px;
+    border: none;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 15px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    opacity: 0.5;
+}
+
+.estiloTarea{
+    margin-left: 15px;
+}
+
+.footer{
+    opacity: 0.3;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.delete-button {
+    width: 16px;
+    height: 16px;
+    background: none;
+    border: none;
+    color: #cc9a9a;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: 10px;
+    font-family: Verdana;
+    transition: opacity 0.5s ease;
+  }
+  
+  .delete-button:hover {
+    color: #af5b5e;
+  }
+  
+  .pendientes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+
+  .txt{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgb(221, 221, 221);
+  }
+
+  .txt .delete-button{
+    opacity: 0;
+  }
+
+  .txt:hover .delete-button{
+    opacity: 1;
+  }
