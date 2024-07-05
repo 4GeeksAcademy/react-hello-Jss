@@ -9,8 +9,25 @@ const Home = () => {
 
 
 	useEffect(() => {
+		fetchCreateAgenda()
 		fetchGetTask()
 	}, [])
+
+	/////////////////////////////////////////////////////
+
+	const fetchCreateAgenda = () =>{
+		fetch('https://playground.4geeks.com/contact/agendas/sebas', {
+			method: "POST",
+			body: JSON.stringify(),
+			headers: {
+				"Content-Type": "application/json"
+			}
+		})
+			.then(response => response.json())
+			.then(data => (console.log(data)))
+			.catch(error => console.log(error))
+	}
+	
 
 	/////////////////////////////////////////////////////
 	const handleChange = (e) => {
